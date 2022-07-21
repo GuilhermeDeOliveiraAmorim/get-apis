@@ -1,21 +1,25 @@
-import homeStyle from 'Home.module.css';
 import Link from 'next/link';
 
 export default function MyHome() {
 
     const implementedAPIs = [
-        "advice"
+        {
+            "id": 1,
+            "name": "advice"
+        }
     ];
 
     return (
-        <ul>
-            {implementedAPIs.map(api =>
-                <li>
-                    <Link href={api}>
-                        {api}
-                    </Link>
-                </li>
-            )}
-        </ul>
+        <div>
+            <ul>
+                {implementedAPIs.map(api =>
+                    <li key={api.id}>
+                        <Link href={api.name}>
+                            {api.name}
+                        </Link>
+                    </li>
+                )}
+            </ul>
+        </div>
     );
 }
