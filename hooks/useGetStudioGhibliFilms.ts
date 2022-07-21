@@ -4,7 +4,7 @@ import api from "../services/backend";
 const getStudioGhibliFilms = async () => {
   const response = await api.get("https://ghibliapi.herokuapp.com/films");
   var arrFilms = Array();
-  response.data.map((a) => {
+  response.data.map((a: any) => {
     arrFilms.push({
       id: a.id,
       title: a.title,
