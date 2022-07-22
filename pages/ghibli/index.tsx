@@ -7,9 +7,9 @@ export default function Ghibli() {
 
   return (
     <div>
-      <ul className={ghibliStyle.screen}>
+      <ul className={ghibliStyle.cards}>
         {ghibliFilms.data?.map((film) => (
-          <li className={ghibliStyle.card} key={film.id}>
+          <li className={ghibliStyle.li_size} key={film.id}>
             <Card {...film} />
           </li>
         ))}

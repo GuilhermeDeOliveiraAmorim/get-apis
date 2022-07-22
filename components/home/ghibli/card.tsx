@@ -13,16 +13,12 @@ export default function Card(props: IProps) {
     const { id, title, poster, synopsis, year } = props;
 
     return (
-        <div>
-            <h1 className={cardStyle.title}>
-                {title}
-            </h1>
-            <p className={cardStyle.snopysis}>
-                {synopsis}
-            </p>
-            <p className={cardStyle.year}>
-                {year}
-            </p>
+        <div className={cardStyle.card}>
+            <img className={cardStyle.img_full} src={poster} alt="Avatar" />
+            <div className={cardStyle.container}>
+                <h4 className={cardStyle.h4}><b>{title}</b></h4>
+                <p className={cardStyle.p}>{synopsis}</p>
+            </div>
         </div>
     );
 }
