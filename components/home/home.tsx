@@ -9,8 +9,8 @@ export default function MyHome() {
         },
         {
             "id": 2,
-            "name": "weather"
-        }
+            "name": "ghibli"
+        },
     ];
 
     return (
