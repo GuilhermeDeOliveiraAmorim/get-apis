@@ -16,7 +16,7 @@ export default function Card(props: IProps) {
         <div className={cardStyle.card}>
             <img className={cardStyle.img_full} src={poster} alt="Avatar" />
             <div className={cardStyle.container}>
-                <h4 className={cardStyle.h4}><b>{title}</b></h4>
+                <h4 className={cardStyle.h4}>{title} ({year})</h4>
                 <p className={cardStyle.p}>{synopsis}</p>
             </div>
         </div>

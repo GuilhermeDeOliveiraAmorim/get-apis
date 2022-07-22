@@ -3,9 +3,28 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
-    gap: 25px;
 }
 
 .li_size {
-    width: 30%;
+    width: 30vw;
+    cursor: pointer;
+    margin-bottom: 15px;
 }
+
+@media only screen and (max-width: 600px) {
+    .li_size {
+        width: 100vw;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .li_size {
+        width: 45vw;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .li_size {
+        width: 30vw;
+    }
+} 
