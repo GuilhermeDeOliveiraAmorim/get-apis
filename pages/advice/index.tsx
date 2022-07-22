@@ -19,7 +19,7 @@ export default function Advice() {
 
     return (
         <div style={divStyle}>
-            <div className={adviceStyle.screen}>
+            <div className={adviceStyle.advice}>
                 <blockquote className={adviceStyle.blockquote}>
                     {advice.data}
                 </blockquote>

@@ -6,7 +6,7 @@ export default function Ghibli() {
   const ghibliFilms = useGetStudioGhibliFilms();
 
   return (
-    <div>
+    <div className={ghibliStyle.screen}>
       <ul className={ghibliStyle.cards}>
         {ghibliFilms.data?.map((film) => (
           <li className={ghibliStyle.li_size} key={film.id}>

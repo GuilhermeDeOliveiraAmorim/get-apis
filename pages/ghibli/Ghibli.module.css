@@ -1,3 +1,7 @@
+.screen {
+    margin: 15px;
+}
+
 .cards {
     display: flex;
     flex-direction: row;
