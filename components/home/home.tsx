@@ -6,6 +6,10 @@ export default function MyHome() {
         {
             "id": 1,
             "name": "advice"
+        },
+        {
+            "id": 2,
+            "name": "weather"
         }
     ];
 
