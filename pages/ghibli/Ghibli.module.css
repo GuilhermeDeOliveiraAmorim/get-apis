@@ -1,5 +1,5 @@
 .screen {
-    margin: 15px;
+    background-color: transparent;
 }
 
 .cards {
@@ -31,4 +31,4 @@
     .li_size {
         width: 30vw;
     }
-} 
+}

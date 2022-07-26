@@ -1,7 +1,6 @@
 import cardStyle from "./Card.module.css"
 
 interface IProps {
-    id: number;
     title: string;
     poster: string;
     synopsis: string;
@@ -10,7 +9,7 @@ interface IProps {
 
 export default function Card(props: IProps) {
 
-    const { id, title, poster, synopsis, year } = props;
+    const { title, poster, synopsis, year } = props;
 
     return (
         <div className={cardStyle.card}>

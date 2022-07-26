@@ -1,24 +1,32 @@
 import Link from 'next/link';
+import stylesHome from './MyHome.module.css'
 
 export default function MyHome() {
 
     const implementedAPIs = [
         {
             "id": 1,
-            "name": "advice"
+            "url": "advice",
+            "name": "Advices"
         },
         {
             "id": 2,
-            "name": "ghibli"
+            "url": "ghibli",
+            "name": "Ghibli Movies"
+        },
+        {
+            "id": 3,
+            "url": "https://rick-and-morty-card-app.vercel.app/",
+            "name": "Rick And Morty"
         },
     ];
 
     return (
-        <div>
+        <div className={stylesHome.gridContainer}>
             <ul>
                 {implementedAPIs.map(api =>
-                    <li key={api.id}>
-                        <Link href={api.name}>
+                    <li className={stylesHome.gridItem} key={api.id}>
+                        <Link href={api.url}>
                             {api.name}
                         </Link>
                     </li>
