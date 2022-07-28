@@ -1,14 +1,56 @@
-.gridContainer {
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+.container {
+  width: 1280px;
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  grid-gap: 0.5em;
+  padding: 15px;
+}
+.card_api {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  background-color: #051d3b;
+  border: solid 0.03em #0d4d9c;
+  padding: 15px;
+  border-radius: 15px;
+  cursor: pointer;
+}
+.card_api:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+.card_api_h {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.card_api_p {
+  font-size: 16;
+  color: white;
+  font-family: 'Inter', sans-serif;
+}
+@media only screen and (max-width: 600px) {
+  .container {
     display: grid;
-    grid-template-columns: auto auto auto auto;
-    background-color: #2196f3;
-    padding: 10px;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 0.5em;
+  }
 }
 
-.gridItem {
-    background-color: rgba(255, 255, 255, 0.8);
-    border: 1px solid rgba(0, 0, 0, 0.8);
-    padding: 20px;
-    font-size: 20px;
-    text-align: center;
+@media only screen and (min-width: 600px) {
+  .container {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 0.5em;
+  }
+}
+
+@media only screen and (min-width: 992px) {
+  .container {
+    display: grid;
+    grid-template-columns: repeat(6,1fr);
+    grid-gap: 0.5em;
+  }
 }
