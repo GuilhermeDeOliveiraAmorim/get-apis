@@ -50,8 +50,8 @@ export default function MyHome() {
     <div style={divStyle} className={stylesHome.main}>
       <div className={stylesHome.container}>
         {implementedAPIs.map((api) => (
-          <Link passHref href={`${api.url}`}>
-            <div key={api.id} className={stylesHome.card_api}>
+          <Link key={api.id} passHref href={`${api.url}`}>
+            <div className={stylesHome.card_api}>
               <h1 className={stylesHome.card_api_h} style={changeColor(colors)}>
                 {api.name}
               </h1>
