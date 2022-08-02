@@ -7,7 +7,6 @@ export default function FormationSection() {
     return (
         <div className={SectionStyle.section}>
             <div className={SectionStyle.container}>
-                <SectionInfo titleSection={sectionFormationInfo.title} textSection={sectionFormationInfo.text} />
                 <ApisList />
             </div>
         </div>
