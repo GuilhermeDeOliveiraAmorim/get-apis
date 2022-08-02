@@ -1,0 +1,26 @@
+.section {
+	display: flex;
+	justify-content: center;
+	padding-top: 50px;
+	padding-bottom: 50px;
+	background-color: #ffffff;
+}
+
+.section .info {
+	padding: 15px;
+}
+
+.section .info .h1 {
+	font-size: 25px;
+	color: #ffffff;
+	margin-bottom: 10px;
+}
+
+.section .info .p {
+	font-size: 18px;
+	color: #ffffff;
+}
+
+.container {
+	width: 960px;
+}

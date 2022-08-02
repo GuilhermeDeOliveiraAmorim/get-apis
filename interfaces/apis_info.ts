@@ -1,4 +1,4 @@
-export interface IApisInfo {
+export interface ISectionInfo {
     titleSection: string;
     textSection: string;
 }
