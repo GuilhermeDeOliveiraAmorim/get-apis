@@ -1,4 +1,4 @@
-import Card from "../../components/home/ghibli/card";
+import Card from "../../components/ghibli/card";
 import useGetStudioGhibliFilms from "../../hooks/useGetStudioGhibliFilms";
 import ghibliStyle from "./Ghibli.module.css";
 import bg_01 from '../../public/73-737065_living-waters-ag-wave-vector-clipart-1024x546.png'
