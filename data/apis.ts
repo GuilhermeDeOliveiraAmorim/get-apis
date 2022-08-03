@@ -33,37 +33,37 @@ export const sectionFormationSkills = [
     {
         id: 1,
         skill: "Java",
-        level: 40
+        level: 40,
     },
     {
         id: 2,
         skill: "PHP",
-        level: 50
+        level: 50,
     },
     {
         id: 3,
         skill: "JavaScript",
-        level: 60
+        level: 60,
     },
     {
         id: 4,
         skill: "CSS",
-        level: 70
+        level: 70,
     },
     {
         id: 5,
         skill: "HTML",
-        level: 70
+        level: 70,
     },
     {
         id: 6,
         skill: "React",
-        level: 40
+        level: 40,
     },
     {
         id: 7,
         skill: "NextJs",
-        level: 30
+        level: 30,
     },
 ];
 
@@ -75,20 +75,39 @@ export const formationInfo = {
 export const formationContent = [
     {
         id: 1,
-        institutionName: "Universidade Federal de Pernambuco",
+        institutionName: "Instituto de Gestão e Tecnologia da Informação",
         institutionPlace: "Recife, Pernambuco",
-        institutionIcon: "https://media-exp1.licdn.com/dms/image/C4D0BAQEKdP5dQl2lTQ/company-logo_100_100/0/1657652880602?e=1667433600&v=beta&t=yGFBLgxO1wPlRujBCrrME7sgvM5FanhpydvgT6sjb40",
-        formation: "Analista de Teste - Engenharia de Software, com formação em Análise de Testes",
-        startDate: "01-2013",
-        endDate: "12-2013"
+        institutionIcon:
+            "https://media-exp1.licdn.com/dms/image/C4D0BAQF8OT9RjVFVBw/company-logo_100_100/0/1656305893613?e=1667433600&v=beta&t=twSK7a60w8eOLcaIp5JSfV5ey9NcJnhGjXJsY6olNhM",
+        formation: "Pós-graduação Lato Sensu, MBA, Desenvolvimento Full Stack",
+        startDate: "2022",
+        endDate: "2022",
+        monthStartDate: "05",
+        monthEndDate: "12",
     },
     {
         id: 2,
+        institutionName: "Universidade Federal de Pernambuco",
+        institutionPlace: "Recife, Pernambuco",
+        institutionIcon:
+            "https://media-exp1.licdn.com/dms/image/C4D0BAQEKdP5dQl2lTQ/company-logo_100_100/0/1657652880602?e=1667433600&v=beta&t=yGFBLgxO1wPlRujBCrrME7sgvM5FanhpydvgT6sjb40",
+        formation:
+            "Analista de Teste - Engenharia de Software, com formação em Análise de Testes",
+        startDate: "2013",
+        endDate: "2013",
+        monthStartDate: "01",
+        monthEndDate: "12",
+    },
+    {
+        id: 3,
         institutionName: "Universidade Federal de Alagoas",
         institutionPlace: "Arapiraca, Alagoas",
-        institutionIcon: "https://media-exp1.licdn.com/dms/image/C4D0BAQGYaUlA-bsuTw/company-logo_100_100/0/1519887517503?e=1667433600&v=beta&t=LJSOWoai7FSZpUaaB6eNk6mIrAskop3WsD2iO0pWf7Q",
+        institutionIcon:
+            "https://media-exp1.licdn.com/dms/image/C4D0BAQGYaUlA-bsuTw/company-logo_100_100/0/1519887517503?e=1667433600&v=beta&t=LJSOWoai7FSZpUaaB6eNk6mIrAskop3WsD2iO0pWf7Q",
         formation: "Bacharel em Ciência da Computação",
-        startDate: "07-2006",
-        endDate: "12-2013"
-    }
+        startDate: "2006",
+        endDate: "2013",
+        monthStartDate: "07",
+        monthEndDate: "12",
+    },
 ];

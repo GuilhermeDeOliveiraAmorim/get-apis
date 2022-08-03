@@ -1,11 +1,11 @@
 .formations {
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-gap: 0.5em;
-	padding: 15px;
+    padding: 15px;
 }
 .formation {
-	box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 20%);
     background-color: #051d3b;
     border: solid 0.03em #0d4d9c;
     padding: 15px;
@@ -13,45 +13,52 @@
     cursor: pointer;
 }
 .img_div {
-	display: flex;
-	align-content: center;
+    display: flex;
+    align-content: center;
     justify-content: center;
     align-items: center;
 }
 .img {
-	border-radius: 50%;
+    border-radius: 50%;
+    height: 100px;
+    border: solid 1px #0d4d9c;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 .h1 {
-	text-align: center;
-	padding: 10px;
-	color: #ffffff;
+    text-align: center;
+    padding: 10px;
+    color: #ffffff;
+    font-size: 18px;
 }
 .h2 {
-	text-align: center;
-	padding: 5px;
-	color: #ffffff;
+    text-align: center;
+    padding: 5px;
+    color: #ffffff;
+    font-size: 15px;
 }
 .h3 {
-	text-align: center;
-	padding: 5px;
-	color: #ffffff;
+    text-align: center;
+    padding: 5px;
+    color: #ffffff;
+    font-size: 15px;
 }
 .date {
-	display: flex;
-	justify-content: center;
+    display: flex;
+    justify-content: center;
     align-items: center;
     align-content: center;
 }
 .h4 {
-	text-align: center;
-	padding: 5px;
-	color: #ffffff;
+    text-align: left;
+    padding: 5px;
+    color: #ffffff;
+    font-size: 12px;
 }
 @media only screen and (max-width: 600px) {
-	.formations {
-		display: grid;
-		grid-template-columns: repeat(1,1fr);
-		grid-gap: 0.5em;
-		padding: 15px;
-	}
+    .formations {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 0.5em;
+        padding: 15px;
+    }
 }
