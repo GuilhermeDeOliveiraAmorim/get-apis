@@ -1,4 +1,4 @@
-import { ISectionInfo } from "../../../interfaces/apis_info";
+import { ISectionInfo } from "../../interfaces/apis_info";
 import SectionInfoStyle from "./SectionInfo.module.css";
 
 export default function SectionInfo(props: ISectionInfo) {

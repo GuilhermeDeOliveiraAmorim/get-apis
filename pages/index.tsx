@@ -1,8 +1,8 @@
 import type { NextPage } from "next";
-import ApisList from "../components/home/apis-section/apis-list";
+import ApisList from "../components/home/apis-section";
 import FormationList from "../components/home/formation-section/";
-import SectionInfo from "../components/home/section-info";
-import UserInfo from "../components/home/user";
+import SectionInfo from "../components/section-info";
+import UserInfo from "../components/home/user-section";
 import Section from "../components/section";
 import { sectionApisInfo, sectionFormationInfo } from "../data/apis";
 import { divStyle } from "../styles/styles";

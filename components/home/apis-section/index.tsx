@@ -1,7 +1,7 @@
 import Link from "next/link";
-import { implementedAPIs } from "../../../../data/apis";
-import { changeColor } from "../../../../util/util_change_color";
-import { colors } from "../../../../util/util_colors";
+import { implementedAPIs } from "../../../data/apis";
+import { changeColor } from "../../../util/util_change_color";
+import { colors } from "../../../util/util_colors";
 import ApisListStyle from "./ApisList.module.css";
 
 export default function ApisList() {
