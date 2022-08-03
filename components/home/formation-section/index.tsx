@@ -1,22 +1,34 @@
-import { sectionFormationSkills } from "../../../data/apis";
-import FormationListStyle from "./FormationList.module.css";
-import { colors } from "../../../util/util_colors";
+import { formationContent } from "../../../data/apis";
+import FormationStyle from "./Formation.module.css";
 
-export default function FormationList() {
-
-    const useColors = colors;
+export default function Formation() {
 
     return (
-        <div className={FormationListStyle.skills}>
-            {sectionFormationSkills.map((skill) => (
-                <div
-                    key={skill.id}
-                    className={FormationListStyle.skill}
-                    style={{ backgroundColor: useColors[Math.floor(Math.random() * 4) + 1] }}
-                >
-                    {skill.skill}<span className={FormationListStyle.level}>{skill.level}</span>
+        <div className={FormationStyle.formations}>
+            {formationContent.map(formation => 
+            <div key={formation.id} className={FormationStyle.formation}>
+                <div className={FormationStyle.img_div}>
+                    <img className={FormationStyle.img} src={formation.institutionIcon} />
                 </div>
-            ))}
+                <h1 className={FormationStyle.h1}>
+                    {formation.institutionName}
+                </h1>
+                <h2 className={FormationStyle.h2}>
+                    {formation.formation}
+                </h2>
+                <h3 className={FormationStyle.h3}>
+                    {formation.institutionPlace}
+                </h3>
+                <div className={FormationStyle.date}>
+                    <h4 className={FormationStyle.h4}>
+                        {formation.startDate}
+                    </h4>
+                    <h4 className={FormationStyle.h4}>
+                        {formation.endDate}
+                    </h4>
+                </div>
+            </div>
+            )}
         </div>
     );
 }

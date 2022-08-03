@@ -1,11 +1,12 @@
 import type { NextPage } from "next";
 import ApisList from "../components/home/apis-section";
-import FormationList from "../components/home/formation-section/";
+import FormationList from "../components/home/about-section";
 import SectionInfo from "../components/section-info";
 import UserInfo from "../components/home/user-section";
 import Section from "../components/section";
-import { sectionApisInfo, sectionFormationInfo } from "../data/apis";
+import { formationInfo, sectionApisInfo, sectionFormationInfo } from "../data/apis";
 import { divStyle } from "../styles/styles";
+import Formation from "../components/home/formation-section";
 
 const Home: NextPage = () => {
 
@@ -40,6 +41,21 @@ const Home: NextPage = () => {
                 }
                 backgroundColor = {
                     {backgroundColor: "#ffffff"}
+                }
+            />
+            <Section 
+                info = {
+                    <SectionInfo
+                        titleSection={formationInfo.title}
+                        textSection={formationInfo.text}
+                        color={{color: "#ffffff"}}
+                    />
+                }
+                content = {
+                    <Formation />
+                }
+                backgroundColor = {
+                    {backgroundColor: "#061833"}
                 }
             />
         </div>

@@ -66,3 +66,29 @@ export const sectionFormationSkills = [
         level: 30
     },
 ];
+
+export const formationInfo = {
+    title: "Formation",
+    text: "",
+};
+
+export const formationContent = [
+    {
+        id: 1,
+        institutionName: "Universidade Federal de Pernambuco",
+        institutionPlace: "Recife, Pernambuco",
+        institutionIcon: "https://media-exp1.licdn.com/dms/image/C4D0BAQEKdP5dQl2lTQ/company-logo_100_100/0/1657652880602?e=1667433600&v=beta&t=yGFBLgxO1wPlRujBCrrME7sgvM5FanhpydvgT6sjb40",
+        formation: "Analista de Teste - Engenharia de Software, com formação em Análise de Testes",
+        startDate: "01-2013",
+        endDate: "12-2013"
+    },
+    {
+        id: 2,
+        institutionName: "Universidade Federal de Alagoas",
+        institutionPlace: "Arapiraca, Alagoas",
+        institutionIcon: "https://media-exp1.licdn.com/dms/image/C4D0BAQGYaUlA-bsuTw/company-logo_100_100/0/1519887517503?e=1667433600&v=beta&t=LJSOWoai7FSZpUaaB6eNk6mIrAskop3WsD2iO0pWf7Q",
+        formation: "Bacharel em Ciência da Computação",
+        startDate: "07-2006",
+        endDate: "12-2013"
+    }
+];
