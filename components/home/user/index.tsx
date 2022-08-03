@@ -9,7 +9,7 @@ export default function UserInfo() {
     const user = useGetGitUserInfo();
 
     return (
-        <div className={StyleUser.user}>
+        <section className={StyleUser.user}>
             <div className={StyleUser.picture}>
                 <img className={StyleUser.img} src={user.data?.avatar_url} />
                 <h1 className={StyleUser.h1}>{user.data?.name}</h1>
@@ -17,9 +17,7 @@ export default function UserInfo() {
                 <div className={StyleUser.info}>
                     <Link
                         target={"_blank"}
-                        href={
-                            "https://api.whatsapp.com/send?phone=5579991145680&text=Ol%C3%A1!%20Cheguei%20aqui%20atrav%C3%A9s%20do%20seu%20portf%C3%B3lio!"
-                        }
+                        href="https://api.whatsapp.com/send?phone=5579991145680&text=Ol%C3%A1!%20Cheguei%20aqui%20atrav%C3%A9s%20do%20seu%20portf%C3%B3lio!"
                     >
                         <FaWhatsappSquare
                             className={StyleUser.icon}
@@ -28,9 +26,7 @@ export default function UserInfo() {
                     </Link>
                     <Link
                         target={"_blank"}
-                        href={
-                            "https://www.linkedin.com/in/guideoliveiraamorim/"
-                        }
+                        href="https://www.linkedin.com/in/guideoliveiraamorim/"
                     >
                         <FaLinkedin
                             className={StyleUser.icon}
@@ -39,7 +35,7 @@ export default function UserInfo() {
                     </Link>
                     <Link
                         target={"_blank"}
-                        href={"https://github.com/GuilhermeDeOliveiraAmorim"}
+                        href="https://github.com/GuilhermeDeOliveiraAmorim"
                     >
                         <FaGithubSquare
                             className={StyleUser.icon}
@@ -48,6 +44,6 @@ export default function UserInfo() {
                     </Link>
                 </div>
             </div>
-        </div>
+        </section>
     );
 }

@@ -1,0 +1,17 @@
+.skills {
+	display: flex;
+    grid-gap: 0.5em;
+	padding: 15px;
+	flex-wrap: wrap;
+}
+.skill {
+	padding: 5px;
+	border-radius: 20px;
+	font-size: 12px;
+	color: #1d1d1d;
+}
+.level {
+	margin-left: 5px;
+	font-size: 10px;
+	color: #1d1d1d;
+}

@@ -1,14 +1,22 @@
-import ApisList from ".././apis-section/apis-list";
-import SectionStyle from "./Section.module.css";
-import { sectionFormationInfo } from "../../../data/apis";
-import SectionInfo from "../section-info";
+import { sectionFormationSkills } from "../../../data/apis";
+import FormationListStyle from "./FormationList.module.css";
+import { colors } from "../../../util/util_colors";
 
-export default function FormationSection() {
+export default function FormationList() {
+
+    const useColors = colors;
+
     return (
-        <div className={SectionStyle.section}>
-            <div className={SectionStyle.container}>
-                <ApisList />
-            </div>
+        <div className={FormationListStyle.skills}>
+            {sectionFormationSkills.map((skill) => (
+                <div
+                    key={skill.id}
+                    className={FormationListStyle.skill}
+                    style={{ backgroundColor: useColors[Math.floor(Math.random() * 4) + 1] }}
+                >
+                    {skill.skill}<span className={FormationListStyle.level}>{skill.level}</span>
+                </div>
+            ))}
         </div>
     );
 }
