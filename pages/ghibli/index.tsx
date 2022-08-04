@@ -25,7 +25,8 @@ export default function Ghibli() {
 		backgroundPosition: 'center',
 		backgroundRepeat: 'no-repeat',
 		backgroundSize: 'cover',
-		backgroundAttachment: 'fixed'
+		backgroundAttachment: 'fixed',
+		overflow: 'auto'
 	};
 
 	return (
