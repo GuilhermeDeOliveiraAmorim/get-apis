@@ -7,7 +7,6 @@ import { formationInfo, sectionApisInfo, sectionFormationInfo } from "../data/ap
 import { divStyle } from "../styles/styles";
 import Formation from "../components/home/formation-section";
 import AboutSkills from "../components/home/about-section";
-import GitRepos from "../components/home/git-repos-section";
 import Head from "next/head";
 
 const Home: NextPage = () => {
