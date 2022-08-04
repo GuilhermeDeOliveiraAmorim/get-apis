@@ -4,4 +4,5 @@ export const divStyle = {
     backgroundPosition: "center",
     backgroundRepeat: "no-repeat",
     backgroundSize: "cover",
+    overflow: "auto",
 };

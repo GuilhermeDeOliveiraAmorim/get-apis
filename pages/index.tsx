@@ -61,22 +61,7 @@ const Home: NextPage = () => {
                     <Formation />
                 }
                 backgroundColor={
-                    { backgroundColor: "#061833" }
-                }
-            />
-            <Section
-                info={
-                    <SectionInfo
-                        titleSection={""}
-                        textSection={""}
-                        color={{ color: "#ffffff" }}
-                    />
-                }
-                content={
-                    <GitRepos />
-                }
-                backgroundColor={
-                    { backgroundColor: "#061833" }
+                    { backgroundColor: "#transparent" }
                 }
             />
         </div>
