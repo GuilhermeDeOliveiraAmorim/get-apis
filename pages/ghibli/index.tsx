@@ -8,6 +8,7 @@ import bg_04 from '../../public/D7K2JWwWkAAnpa82-1024x640.jpg'
 import bg_05 from '../../public/d78b1219f9991c69a7619d362548cb79f4d29e02_hq2.jpg'
 import bg_06 from '../../public/d540rv6-5725a401-30b4-496e-b5e3-e0aba5080f061-1024x576.jpg'
 import bg_07 from '../../public/dims1-1024x546.jpg'
+import Head from "next/head";
 
 export default function Ghibli() {
 
@@ -29,6 +30,10 @@ export default function Ghibli() {
 
 	return (
 		<div style={divStyle}>
+			<Head>
+				<title>Studio Ghibli</title>
+				<meta name="viewport" content="initial-scale=1.0, width=device-width" />
+			</Head>
 			<div className={ghibliStyle.screen}>
 				<ul className={ghibliStyle.cards}>
 					{ghibliFilms.data?.map((film) => (
