@@ -2,7 +2,7 @@ import { CSSProperties } from "react";
 import * as Icons from "react-icons/fa";
 
 interface IMyIcon {
-    icon: string;
+    icon: keyof typeof Icons;
     styleIcon: CSSProperties;
     classIcon: string;
 }
