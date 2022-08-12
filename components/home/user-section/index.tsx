@@ -1,9 +1,10 @@
 import useGetGitUserInfo from "../../../hooks/use-github/useGetGitUserInfo";
 import StyleUser from "./User.module.css";
-import Link from "next/link";
-import { FaWhatsappSquare, FaLinkedin, FaGithubSquare } from "react-icons/fa";
 import { changeColor } from "../../../util/util_change_color";
 import { colors } from "../../../util/util_colors";
+import { socialIcons } from "../../../data/apis";
+import Link from "next/link";
+import MyIcon from "../../commons/icon";
 
 export default function UserInfo() {
     const user = useGetGitUserInfo();
@@ -15,33 +16,18 @@ export default function UserInfo() {
                 <h1 className={StyleUser.h1}>{user.data?.name}</h1>
                 <h2 className={StyleUser.h2}>Desenvolvedor full stack</h2>
                 <div className={StyleUser.info}>
+                {socialIcons.map(s =>
                     <Link
-                        target={"_blank"}
-                        href="https://api.whatsapp.com/send?phone=5579991145680&text=Ol%C3%A1!%20Cheguei%20aqui%20atrav%C3%A9s%20do%20seu%20portf%C3%B3lio!"
+                        key={s.id}
+                        passHref
+                        target="_blank"
+                        href={s.link}
                     >
-                        <FaWhatsappSquare
-                            className={StyleUser.icon}
-                            style={changeColor(colors)}
-                        />
+                        <a>
+                            <MyIcon icon={s.icon} styleIcon={changeColor(colors)} classIcon={StyleUser.icon} />
+                        </a>
                     </Link>
-                    <Link
-                        target={"_blank"}
-                        href="https://www.linkedin.com/in/guideoliveiraamorim/"
-                    >
-                        <FaLinkedin
-                            className={StyleUser.icon}
-                            style={changeColor(colors)}
-                        />
-                    </Link>
-                    <Link
-                        target={"_blank"}
-                        href="https://github.com/GuilhermeDeOliveiraAmorim"
-                    >
-                        <FaGithubSquare
-                            className={StyleUser.icon}
-                            style={changeColor(colors)}
-                        />
-                    </Link>
+                )}
                 </div>
             </div>
         </section>
