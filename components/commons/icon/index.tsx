@@ -1,11 +1,5 @@
-import { CSSProperties } from "react";
 import * as Icons from "react-icons/fa";
-
-interface IMyIcon {
-    icon: keyof typeof Icons;
-    styleIcon: CSSProperties;
-    classIcon: string;
-}
+import { IMyIcon } from "../../../interfaces/icon";
 
 export default function MyIcon(props: IMyIcon) {
 
