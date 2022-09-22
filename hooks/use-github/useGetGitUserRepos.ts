@@ -16,8 +16,6 @@ const getGitUserRepos = async () => {
     `https://api.github.com/users/${user}/repos`
   );
 
-  console.log(response.data);
-
   return response.data;
 };
 
