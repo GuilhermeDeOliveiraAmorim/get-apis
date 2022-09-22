@@ -10,7 +10,7 @@ export default function SectionInfo(props: ISectionInfo) {
         {titleSection}
       </h1>
       {textSection.map((p) => (
-        <p style={color} className={SectionInfoStyle.p}>
+        <p key={p.length + Math.random()} style={color} className={SectionInfoStyle.p}>
           {p}
         </p>
       ))}
